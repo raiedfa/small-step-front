@@ -1,3 +1,4 @@
+
 import axios from "axios";
 
 const BASE_URL = "http://localhost:9000";
@@ -10,7 +11,7 @@ export const addComment = async (comment) => {
         console.error("Error adding comment:", error);
         throw error;
     }
-};
+}
 
 export const getComments = async () => {
     try {
@@ -20,4 +21,4 @@ export const getComments = async () => {
         console.error("Error fetching comments:", error);
         throw error;
     }
-};
+}
