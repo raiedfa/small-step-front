@@ -1,0 +1,117 @@
+.game {
+  display: flex;              /* הפעלה של Flexbox */
+  flex-direction: column;     /* סדר אנכי */
+  justify-content: center;     /* מרכז אנכי */
+  align-items: center;         /* מרכז אופקי */
+  min-height: 80vh;           /* גובה מינימלי כדי למרכז גם בגובה העמוד */
+  text-align: center;         /* מרכז את הטקסט */
+  gap: 20px;                  /* ריווח בין האלמנטים */
+}
+
+
+
+
+
+
+
+
+.game-intro {
+  background-color: #f0f8ff; /* צבע רקע רך */
+  color: #333;               /* צבע טקסט כהה לקריאות */
+  font-size: 1.2rem;         /* גודל טקסט נוח לקריאה */
+  font-weight: 500;           /* קצת מודגש */
+  padding: 20px 30px;         /* ריווח פנימי נעים */
+  border-radius: 10px;        /* פינות מעוגלות */
+  text-align: center;         /* מרכז את הטקסט */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל קל */
+  margin: 20px auto;          /* ריווח חיצוני אוטומטי במרכז */
+  max-width: 600px;           /* מגבלת רוחב כדי לא להימתח */
+  line-height: 1.5;           /* מרווח שורות לקריאות */
+}
+
+/* אפשר גם להוסיף אנימציה קלה */
+.game-intro {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.game-iframe iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.game-end {
+  background-color: #a5d4e2;   /* צבע רקע רך ומרגיע */
+  color: #333;                 /* צבע טקסט קריא */
+  font-size: 1.2rem;           /* גודל טקסט נוח לקריאה */
+  font-weight: 500;             /* קצת מודגש */
+  padding: 20px 30px;           /* ריווח פנימי */
+  border-radius: 10px;          /* פינות מעוגלות */
+  text-align: center;           /* מרכז את הטקסט */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל קל */
+  margin: 15px auto;            /* ריווח חיצוני במרכז */
+  max-width: 700px;             /* מגבלת רוחב לקריאות */
+  line-height: 1.5;             /* מרווח שורות לקריאות */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* אנימציה קלה */
+}
+
+/* אפקט קטן כשעוברים עם העכבר */
+.game-end:hover {
+  transform: translateY(-5px);
+  background-color: #ffe0b2;   /* משנה צבע רקע קליל בהצבעה */
+}
+
+
+
+.site-footer {
+  background-color: #f0f8ff; /* צבע רקע רך ומרגיע */
+  color: #333;               /* צבע טקסט קריא */
+  text-align: center;         /* מרכז את כל התוכן */
+  padding: 20px 10px;         /* ריווח פנימי נעים */
+  border-top: 2px solid #ccc; /* קו עליון מפריד מהתוכן */
+  font-size: 0.9rem;          /* טקסט קטן אבל קריא */
+  margin-top: 40px;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: #1e90ff;            /* צבע קישורים בולט */
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff6347;            /* צבע שינוי בהצבעה */
+}
+
+@media (max-width: 768px) {
+  .game-intro {
+    font-size: 1.3rem;
+  }
+
+  .game-iframe iframe {
+    height: 400px;
+  }
+
+  .game-end {
+    font-size: 1rem;
+  }
+}
+
+
+           
+
+

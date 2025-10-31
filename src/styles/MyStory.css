@@ -1,0 +1,244 @@
+.intro {
+  font-size: 1.6rem;         /* bigger than normal text */
+  font-weight: 700;          /* bold */
+  color: #000;               /* deep black */
+  text-align: center;        /* center on page */
+  margin-bottom: 30px;       /* space below intro */
+  position: relative;        /* allows decoration */
+  font-family: 'Alef', sans-serif;
+  letter-spacing: 1px;       /* elegant spacing */
+}
+
+.intro::after {
+  content: "";
+  display: block;
+  width: 60px;               /* short underline */
+  height: 3px;
+  background: #1abc9c;       /* teal accent line */
+  margin: 10px auto 0;       /* center under text */
+  border-radius: 2px;
+}
+
+.intro1 {
+  text-align: center;       
+  font-size: 1.3rem;        
+  font-weight: 500;         
+  color: #333;              
+  margin: 30px auto;        
+  direction: rtl;           
+  font-family: 'Alef', sans-serif;
+  max-width: 700px;   /* keeps it from stretching too wide */
+  line-height: 1.8; 
+}
+
+
+
+
+
+
+
+.main {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 50px;
+  background: linear-gradient(145deg, #fffefc, #fdfaf4); /* soft paper gradient */
+  border: 2px solid #e6dfc8;       /* vintage border */
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  font-family: 'David Libre', 'Alef', serif;
+  line-height: 2;
+  font-size: 1.2rem;
+  color: #060b11;
+  direction: rtl;                  /* Hebrew text */
+  text-align: justify;             /* book alignment */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Decorative side border like a journal */
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 8px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #d4a017,
+    #d4a017 12px,
+    transparent 12px,
+    transparent 24px
+  );
+  border-radius: 4px;
+}
+
+/* Paragraphs */
+.main p {
+  margin: 22px 0;
+  text-indent: 2em;
+  background: rgba(255, 255, 240, 0.5); /* subtle highlight */
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.important {
+  font-weight: bold;
+  font-size: 1.35rem;
+  color: #0f0a07;                  /* emotional emphasis */
+  /* display: block; */
+  margin: 25px 0;
+}
+
+
+.main p:hover {
+  background: rgba(255, 255, 200, 0.6); /* soft warm hover */
+}
+
+/* Section titles */
+.main h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 50px 0 25px;
+  color: #222;
+  text-align: center;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.main h2::after {
+  content: "✦";
+  display: block;
+  margin: 10px auto 0;
+  font-size: 1.5rem;
+  color: #d4a017; /* golden star accent */
+}
+
+/* Quotes */
+.main blockquote {
+  margin: 30px auto;
+  padding: 18px 24px;
+  border-right: 5px solid #d4a017;
+  background: #fff9e1;
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #444;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.image3 {
+  display: block;
+  margin: 30px auto;           /* centers image */
+  max-width: 400px;            /* keeps it not too big */
+  width: 100%;                 /* responsive */
+  height: auto;                /* keeps proportions */
+  border-radius: 10px;         
+  border: 3px solid #f8f8f8;   
+  box-shadow: 0 0 20px rgba(255, 223, 88, 0.6); 
+  box-sizing: border-box;      
+}
+
+.end{
+  margin: 30px auto;
+  padding: 18px 24px;
+  border-right: 5px solid #d4a017;
+  background: #fff9e1;
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #444;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  
+}
+
+
+.story-title {
+  font-size: 2.2rem;            /* large and readable */
+  font-weight: 800;             /* bold and confident */
+  color: #222;                  /* deep neutral tone */
+  text-align: center;           /* centered horizontally */
+  margin: 50px auto 30px auto;  /* nice spacing around */
+  font-family: "Heebo", sans-serif; /* clean Hebrew font */
+  letter-spacing: 1px;          /* subtle spacing for emphasis */
+  text-transform: none;         /* keeps natural casing */
+  line-height: 1.3;
+  border-bottom: 3px solid #444; /* subtle underline for strength */
+  display: inline-block;        /* underline fits the text width */
+  padding-bottom: 8px;
+}
+
+
+/* 🧠 רספונסיבי לניידים */
+@media (max-width: 768px) {
+  .main {
+    padding: 25px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .intro {
+    font-size: 1.3rem;
+    padding: 0 15px;
+  }
+
+  .intro1 {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .important {
+    font-size: 1rem;
+    padding: 10px;
+    border-right: 4px solid #004d73;
+  }
+
+  .story-title {
+    font-size: 1.5rem;
+  }
+
+  .image3 img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 25px auto;
+  }
+
+  .footer {
+    padding: 25px 15px;
+    font-size: 0.9rem;
+  }
+
+  .footer-quote {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
