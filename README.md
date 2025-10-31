@@ -72,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 "# my-app-front" 
 "# my-app-front" 
 "# small-step-front" 
+"# small-step-front" 
